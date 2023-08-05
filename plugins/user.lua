@@ -28,5 +28,9 @@ return {
   { -- Dynamic Column Highlight Color
     'Bekaboo/deadcolumn.nvim',
     lazy = false,
+    opts = {
+      modes = { 'n', 'i', 'ic', 'ix', 'R', 'Rc', 'Rx', 'Rv', 'Rvc', 'Rvx' },
+      scope = "line",
+    },
   },
 }
