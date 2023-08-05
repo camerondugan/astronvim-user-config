@@ -1,6 +1,5 @@
 return {
-  -- Obsidian
-  {
+  { -- Obsidian
     "epwalsh/obsidian.nvim",
     lazy = true,
     event = { "BufReadPre " .. vim.fn.expand "~" .. "/Notes/**.md" },
@@ -19,8 +18,7 @@ return {
       },
     },
   },
-  -- auto-save
-  {
+  { -- auto-save
     "Pocco81/auto-save.nvim",
     lazy = false,
     config = function()
