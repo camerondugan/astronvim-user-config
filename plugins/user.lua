@@ -1,12 +1,20 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  -- Obsidian Config
+  "epwalsh/obsidian.nvim",
+  lazy = true,
+  event = { "BufReadPre " .. vim.fn.expand "~" .. "/Notes/**.md" },
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  keys = {
+    {"gf", "<cmd>ObsidianFollowLink<cr>", desc = "Go to File"},
+  },
+  opts = {
+    dir = "~/Notes",  -- no need to call 'vim.fn.expand' here
+    daily_notes = {
+      folder = "Week Planner/Days"
+    },
+    mappings = {
+    },
+  },
 }
