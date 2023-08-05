@@ -25,4 +25,8 @@ return {
       require("auto-save").setup {}
     end,
   },
+  { -- Dynamic Column Highlight Color
+    'Bekaboo/deadcolumn.nvim',
+    lazy = false,
+  },
 }
