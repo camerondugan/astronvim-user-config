@@ -1,6 +1,6 @@
 return {
-  { -- Obsidian
-    "epwalsh/obsidian.nvim",
+  { -- Obsidian Support
+    'epwalsh/obsidian.nvim',
     lazy = true,
     event = { "BufReadPre " .. vim.fn.expand "~" .. "/Notes/**.md" },
     dependencies = {
@@ -18,8 +18,8 @@ return {
       },
     },
   },
-  { -- auto-save
-    "Pocco81/auto-save.nvim",
+  { -- Don't Have to Press Space W every 2 Seconds
+    'Pocco81/auto-save.nvim',
     lazy = false,
     config = function()
       require("auto-save").setup {}
@@ -31,5 +31,9 @@ return {
     opts = {
       scope = "line",
     },
+  },
+  { -- Quickly Edit Surrounding Text
+    'tpope/vim-surround',
+    lazy = false,
   },
 }
