@@ -17,10 +17,14 @@ return {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
-    -- ["fo"] = {
-    --   function() require("obsidian.mapping").gf_passthrough() end,
-    --   desc = "File Open",
-    -- },
+    gk = { -- l was taken so it's k
+      "$",
+      desc = "Go to end of line",
+    },
+    gj = { -- To make it make sense, k is paired with j
+      "0",
+      desc = "Go to start of line",
+    },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
