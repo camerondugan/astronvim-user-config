@@ -36,6 +36,13 @@ return {
     'tpope/vim-surround',
     lazy = false,
   },
+  { -- Leap a faster /
+    'ggandor/leap.nvim',
+    lazy = false,
+    config = function()
+      require('leap').add_default_mappings()
+    end,
+  },
   { -- Transparent Background
     'xiyaowong/transparent.nvim',
     lazy = false,
