@@ -18,13 +18,6 @@ return {
       },
     },
   },
-  { -- Don't Have to Press Space W every 2 Seconds
-    'Pocco81/auto-save.nvim',
-    lazy = false,
-    config = function()
-      require("auto-save").setup {}
-    end,
-  },
   { -- Dynamic Column Highlight Color
     'Bekaboo/deadcolumn.nvim',
     lazy = false,
