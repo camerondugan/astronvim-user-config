@@ -21,6 +21,5 @@ return {
   { import = "astrocommunity.workflow.hardtime-nvim" },
 
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
-  -- Discord
-  { import = "astrocommunity.media.presence-nvim" },
+  { import = "astrocommunity.utility.nvim-toggler" },
 }
