@@ -27,7 +27,7 @@ return {
   { import = "astrocommunity.editing-support.treesj" },
 
   { import = "astrocommunity.workflow.bad-practices-nvim" },
-  { import = "astrocommunity.workflow.hardtime-nvim" },
+  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
