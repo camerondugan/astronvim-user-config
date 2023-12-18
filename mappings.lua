@@ -42,6 +42,9 @@ return {
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     -- quick cd to buff
     ["<leader>D"] = { ":cd %:p:h<cr>", desc = "CD to tab" },
+    -- Floating File Explorer
+    ["<leader>e"] = { ":Neotree toggle float<cr>" },
+    ["<leader>o"] = { ":cd %:p:h<cr>:Neotree toggle float<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
