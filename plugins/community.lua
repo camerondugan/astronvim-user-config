@@ -18,15 +18,13 @@ return {
   { import = "astrocommunity.pack.godot" },
   { -- change godot path
     "QuickGD/quickgd.nvim",
-    opts = {
-      godot_path = "/nix/store/ral9rvvx8avcv0rnfdccnrvksgizagf8-user-environment/bin/godot",
-    },
+    opts = { godot_path = "/nix/store/ral9rvvx8avcv0rnfdccnrvksgizagf8-user-environment/bin/godot" },
   },
   { import = "astrocommunity.pack.markdown" },
 
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   { import = "astrocommunity.workflow.bad-practices-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
