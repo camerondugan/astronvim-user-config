@@ -25,6 +25,8 @@ return {
   { import = "astrocommunity.pack.markdown" },
 
   { import = "astrocommunity.editing-support.treesj" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   { import = "astrocommunity.workflow.bad-practices-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
