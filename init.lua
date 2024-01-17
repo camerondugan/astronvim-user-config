@@ -75,5 +75,20 @@ return {
         prolog = "prolog",
       },
     }
+    -- Sets Neorg conceallevel (my reason: for hiding link info)
+    vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+      pattern = {"*.norg"},
+      command = "set conceallevel=3"
+    })
+    -- Shows spelling mistakes in normal text files
+    vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+      pattern = {"*.md", "*.txt", "*.norg"},
+      command = "set spell"
+    })
+    -- Stops showing spelling mistakes when exiting normal text files
+    vim.api.nvim_create_autocmd({"BufLeave", "BufWinLeave"}, {
+      pattern = {"*.md", "*.txt", "*.norg"},
+      command = "set spell!"
+    })
   end,
 }
