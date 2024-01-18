@@ -74,6 +74,7 @@ return {
       extension = {
         prolog = "prolog",
       },
+      pattern = { [".*/hyprland%.conf"] = "hyprlang" }
     }
     -- Sets Neorg conceallevel (my reason: for hiding link info)
     vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {

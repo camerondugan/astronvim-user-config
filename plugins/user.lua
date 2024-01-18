@@ -20,4 +20,9 @@ return {
     lazy = false,
     dir = "~/Code/Godot",
   },
+  {
+    "luckasRanarison/tree-sitter-hyprlang",
+    lazy = false,
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+  },
 }
