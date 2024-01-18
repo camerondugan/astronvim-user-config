@@ -32,6 +32,7 @@ return {
       ["core.defaults"] = {}, -- Loads default behaviour
       ["core.concealer"] = {}, -- Adds pretty icons to your documents
       ["core.keybinds"] = {}, -- Adds default keybindings
+      ["core.summary"] = {}, -- Adds generate-workspace-summary
       ["core.completion"] = {
         config = {
           engine = "nvim-cmp",

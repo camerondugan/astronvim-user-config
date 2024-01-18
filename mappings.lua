@@ -45,6 +45,8 @@ return {
     -- Floating File Explorer
     ["<leader>o"] = { ":Neotree toggle float<cr>" },
     ["<leader>e"] = { ":cd %:p:h<cr>:Neotree toggle float<cr>" },
+    -- Neorg
+    ["<leader>N"] = { ":Neorg<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
