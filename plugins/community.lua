@@ -27,13 +27,10 @@ return {
   -- programming-language-support
   { import = "astrocommunity.programming-language-support/csv-vim" },
 
-
   -- editing support
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.editing-support.auto-save-nvim" },
-
 
   { import = "astrocommunity.workflow.bad-practices-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
@@ -41,5 +38,6 @@ return {
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.lsp.nvim-lsp-file-operations" },
 
+  -- utilities
   { import = "astrocommunity.utility.nvim-toggler" },
 }
