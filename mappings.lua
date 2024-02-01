@@ -45,7 +45,7 @@ return {
     -- Floating File Explorer
     ["<leader>o"] = { ":Neotree toggle float<cr>" },
     ["<leader>e"] = { ":cd %:p:h<cr>:Neotree toggle float<cr>" },
-    -- Neorg
+    -- Neorg commands
     ["<leader>N"] = { ":Neorg<cr>" },
   },
   t = {
