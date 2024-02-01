@@ -39,14 +39,16 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    ["<C-s>"] = { "<cmd>w!<cr>", desc = "Save File" }, -- change description but the same command
     -- quick cd to buff
-    ["<leader>D"] = { ":cd %:p:h<cr>", desc = "CD to tab" },
+    ["<leader>D"] = { "<cmd>cd %:p:h<cr>", desc = "CD to tab" },
     -- Floating File Explorer
-    ["<leader>o"] = { ":Neotree toggle float<cr>" },
-    ["<leader>e"] = { ":cd %:p:h<cr>:Neotree toggle float<cr>" },
-    -- Neorg commands
-    ["<leader>N"] = { ":Neorg<cr>" },
+    ["<leader>o"] = { "<cmd>Neotree toggle float<cr>", desc = "open explorer" },
+    ["<leader>e"] = { "<cmd>cd %:p:h<cr><cmd>Neotree toggle float<cr>", desc = "explore" },
+    -- Neorg
+    ["<leader>N"] = { "<cmd>Neorg<cr>", desc = "Neorg" },
+    -- Compiler (helps with unfamiliar code)
+    ["<leader>C"] = { "<cmd>CompilerOpen<cr>", desc = "Compiler"},
   },
   t = {
     -- setting a mapping to false will disable it
