@@ -20,6 +20,10 @@ return {
     lazy = false,
     dir = "~/Code/Godot",
   },
+  { -- Zoxide
+    "nanotee/zoxide.vim",
+    lazy = false,
+  },
   {
     "luckasRanarison/tree-sitter-hyprlang",
     lazy = false,
