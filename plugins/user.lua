@@ -1,4 +1,8 @@
 return {
+  {
+    "theHamsta/nvim-dap-virtual-text",
+    lazy = false,
+  },
   { -- Dynamic Column Highlight Color
     "Bekaboo/deadcolumn.nvim",
     lazy = false,
